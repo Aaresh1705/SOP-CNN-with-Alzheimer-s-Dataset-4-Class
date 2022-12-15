@@ -1,0 +1,98 @@
+"C:\Users\Marcus\SOP libraries\venv\Scripts\python.exe" "C:/Users/Marcus/SOP libraries/main.py"
+Found 6400 files belonging to 4 classes.
+Using 5120 files for training.
+Using 1280 files for validation.
+2022-12-14 11:13:23.404336: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 208, 176, 16)      160       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 104, 88, 16)      0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 104, 88, 32)       4640      
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 52, 44, 32)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (None, 52, 44, 64)        18496     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 26, 22, 64)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_3 (Conv2D)           (None, 26, 22, 128)       73856     
+                                                                 
+ max_pooling2d_3 (MaxPooling  (None, 13, 11, 128)      0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 18304)             0         
+                                                                 
+ dense (Dense)               (None, 128)               2343040   
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ dense_2 (Dense)             (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 2,448,708
+Trainable params: 2,448,708
+Non-trainable params: 0
+_________________________________________________________________
+An error occurred when trying to plot model
+
+Epoch 1: LearningRateScheduler setting learning rate to 0.0010000000474974513.
+Epoch 1/12
+160/160 [==============================] - 32s 193ms/step - loss: 2.1718 - accuracy: 0.5156 - val_loss: 0.9267 - val_accuracy: 0.5461 - lr: 0.0010
+
+Epoch 2: LearningRateScheduler setting learning rate to 0.0010000000474974513.
+Epoch 2/12
+160/160 [==============================] - 31s 193ms/step - loss: 0.8153 - accuracy: 0.6254 - val_loss: 0.7902 - val_accuracy: 0.6250 - lr: 0.0010
+
+Epoch 3: LearningRateScheduler setting learning rate to 0.0007408182136714458.
+Epoch 3/12
+160/160 [==============================] - 31s 194ms/step - loss: 0.6101 - accuracy: 0.7307 - val_loss: 0.5720 - val_accuracy: 0.7414 - lr: 7.4082e-04
+
+Epoch 4: LearningRateScheduler setting learning rate to 0.0007408182136714458.
+Epoch 4/12
+160/160 [==============================] - 31s 195ms/step - loss: 0.4348 - accuracy: 0.8189 - val_loss: 0.4960 - val_accuracy: 0.8000 - lr: 7.4082e-04
+
+Epoch 5: LearningRateScheduler setting learning rate to 0.0005488116294145584.
+Epoch 5/12
+160/160 [==============================] - 32s 200ms/step - loss: 0.2400 - accuracy: 0.9104 - val_loss: 0.3011 - val_accuracy: 0.8836 - lr: 5.4881e-04
+
+Epoch 6: LearningRateScheduler setting learning rate to 0.0005488116294145584.
+Epoch 6/12
+160/160 [==============================] - 32s 201ms/step - loss: 0.1577 - accuracy: 0.9426 - val_loss: 0.2566 - val_accuracy: 0.8945 - lr: 5.4881e-04
+
+Epoch 7: LearningRateScheduler setting learning rate to 0.0004065696557518095.
+Epoch 7/12
+160/160 [==============================] - 31s 196ms/step - loss: 0.0606 - accuracy: 0.9814 - val_loss: 0.1608 - val_accuracy: 0.9461 - lr: 4.0657e-04
+
+Epoch 8: LearningRateScheduler setting learning rate to 0.0004065696557518095.
+Epoch 8/12
+160/160 [==============================] - 32s 202ms/step - loss: 0.0261 - accuracy: 0.9949 - val_loss: 0.1120 - val_accuracy: 0.9609 - lr: 4.0657e-04
+
+Epoch 9: LearningRateScheduler setting learning rate to 0.0003011942026205361.
+Epoch 9/12
+160/160 [==============================] - 32s 198ms/step - loss: 0.0087 - accuracy: 0.9998 - val_loss: 0.0838 - val_accuracy: 0.9711 - lr: 3.0119e-04
+
+Epoch 10: LearningRateScheduler setting learning rate to 0.0003011942026205361.
+Epoch 10/12
+160/160 [==============================] - 32s 198ms/step - loss: 0.0033 - accuracy: 1.0000 - val_loss: 0.0961 - val_accuracy: 0.9641 - lr: 3.0119e-04
+
+Epoch 11: LearningRateScheduler setting learning rate to 0.00022313014778774232.
+Epoch 11/12
+160/160 [==============================] - 32s 199ms/step - loss: 0.0019 - accuracy: 1.0000 - val_loss: 0.0936 - val_accuracy: 0.9656 - lr: 2.2313e-04
+
+Epoch 12: LearningRateScheduler setting learning rate to 0.00022313014778774232.
+Epoch 12/12
+160/160 [==============================] - 32s 199ms/step - loss: 0.0015 - accuracy: 1.0000 - val_loss: 0.0911 - val_accuracy: 0.9680 - lr: 2.2313e-04
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _update_step_xla while saving (showing 5 of 5). These functions will not be directly callable after loading.
+160/160 [==============================] - 6s 39ms/step - loss: 0.0014 - accuracy: 1.0000
+Accuracy: 100.0%
+40/40 [==============================] - 2s 39ms/step
+
+Process finished with exit code 0
